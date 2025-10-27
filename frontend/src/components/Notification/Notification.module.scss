@@ -1,0 +1,47 @@
+@import '../../styles/variables';
+
+.notification {
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.success {
+  background-color: rgba($success-green, 0.1);
+  border: 1px solid rgba($success-green, 0.2);
+  color: darken($success-green, 10%);
+}
+
+.error {
+  background-color: rgba($error-red, 0.1);
+  border: 1px solid rgba($error-red, 0.2);
+  color: darken($error-red, 10%);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message {
+  flex: 1;
+  font-weight: 500;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 15px;
+  color: inherit;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,55 @@
+@import '../../styles/variables';
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  color: $primary-dark;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+}
+
+.required {
+  color: $error-red;
+  margin-left: 2px;
+}
+
+.input {
+  padding: 14px 16px;
+  border: 2px solid lighten($light-gray, 50%);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: $white;
+  color: $primary-dark;
+
+  &:focus {
+    outline: none;
+    border-color: $primary-green;
+    box-shadow: 0 0 0 3px rgba($primary-green, 0.1);
+  }
+
+  &:disabled {
+    background-color: lighten($light-gray, 55%);
+    cursor: not-allowed;
+  }
+
+  &.error {
+    border-color: $error-red;
+    
+    &:focus {
+      box-shadow: 0 0 0 3px rgba($error-red, 0.1);
+    }
+  }
+}
+
+.errorText {
+  color: $error-red;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 2px;
+}

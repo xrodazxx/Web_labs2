@@ -1,0 +1,3 @@
+node_modules/
+backend/docker-compose.yml
+.env
